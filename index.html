@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        #fact{
+            display: none;
+        }
+    </style>
+    <title>Random Fact SandBox</title>
+</head>
+<body class="bg-dark">
+    
+   <div class="container">
+       <div class="row">
+           <div class="col-md-8 mx-auto">
+               <div class="card bg-primary text-white mt-5 p-4">
+                   <h1>Random Facts</h1>
+                   <label>Select the type of the fact:</label>
+
+                   <div class="radio form-check-inline mt-2">
+                       <label>
+                           <input type="radio" name="gridRadios" id="yearRadio" value="year" onclick="selectType()" checked='true'> Year-Type
+                       </label>
+                       &nbsp;
+                       <label>
+                        <input type="radio" name="gridRadios" id="numberRadio" value="number" onclick="selectType()"> Number-Type
+                    </label>
+                   </div>
+
+                   <!-- <p>Enter a year and get the random fact</p> -->
+
+                   <input type="number" class="form-control form-control-lg mt-3" id="numberInput" placeholder="Enter any year/number.." >
+
+                   <div id="fact" class="card-body">
+                       <!-- <h4 class="card-title">
+                           Year Fact
+                       </h4> -->
+                      <strong> <p id="factText" class="card-text"></p></strong>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
